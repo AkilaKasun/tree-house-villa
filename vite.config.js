@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/tree-house-villa/',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}", 
@@ -12,5 +13,5 @@ export default defineConfig({
     extend: {}, 
   },
   plugins: [react(),tailwindcss()],
-base: '/tree-house-villa/', 
+ 
 })
