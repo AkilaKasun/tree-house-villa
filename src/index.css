@@ -1,0 +1,59 @@
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Primary Greens */
+    --forest: #2C4A3B;       /* Deep dark green for text/headings */
+    --moss: #4A6741;         /* Mid-tone green for accents */
+    --sage: #7A9E7E;         /* Main primary color for buttons/highlights */
+    --sage-light: #A8C5A0;   /* Lighter green for glowing text/subtitles */
+    --sage-pale: #E3EAD8;    /* Very light green for cards and backgrounds */
+
+    /* Neutrals & Backgrounds */
+    --cream: #FDFBF7;        /* Off-white for section backgrounds */
+    --warm-white: #FAF9F6;   /* Main body background */
+    --stone: #5C615A;        /* Gray-green for paragraph text */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--warm-white);
+    color: var(--stone);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Map font-display to Playfair Display or any serif font you prefer */
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  /* Custom UI Elements used across your React files */
+  
+  .leaf-divider {
+    width: 40px;
+    height: 1px;
+    background-color: var(--sage);
+    opacity: 0.5;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Performance optimization for GSAP Parallax */
+  .parallax-img {
+    transform-origin: center center;
+    will-change: transform;
+  }
+}
