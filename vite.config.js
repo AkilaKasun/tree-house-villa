@@ -6,10 +6,11 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // <-- Tells Tailwind to look inside your React components
+    "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
-    extend: {}, // You can leave this empty since your colors are in index.css!
+    extend: {}, 
   },
   plugins: [react(),tailwindcss()],
+base: '/tree-house-villa/', 
 })
