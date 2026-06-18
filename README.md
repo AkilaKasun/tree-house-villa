@@ -23,7 +23,7 @@ This project moves away from standard static templates by utilizing timeline-bas
 * **Responsive Orbital Reviews:** A `Math.cos/sin` calculated circular orbit of review cards on Desktop that elegantly gracefully degrades into a staggered vertical stack on Mobile.
 * **Animated SVG Journey:** A dynamic map line that draws itself on scroll, popping up location markers in exact synchronization with the path's progress.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Framework:** React 18+ (Vite)
 * **Styling:** Tailwind CSS (Custom CSS Variables mapping)
@@ -32,7 +32,7 @@ This project moves away from standard static templates by utilizing timeline-bas
 * **Smooth Scroll:** React Lenis
 * **Icons:** React Icons (`react-icons/fi`, `react-icons/tb`, `react-icons/md`)
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -50,29 +50,10 @@ Start the development server:
 
 Bash
 npm run dev
-🏗 Project Structure
-The project utilizes a modular component architecture to keep the GSAP timelines scoped and easily maintainable.
 
-Plaintext
-src/
-├── components/
-│   ├── PageLoader.jsx       # Initial loading sequence
-│   ├── Navbar.jsx           # Glassmorphic sticky top navigation
-│   ├── Hero.jsx             # Deep parallax entry section
-│   ├── TreeGrowth.jsx       # 1990px pinned storytelling scroll
-│   ├── JungleExperience.jsx # Horizontal pinning scroll
-│   ├── Rooms.jsx            # Sticky stacking layout
-│   ├── Gallery.jsx          # Opposing column parallax
-│   ├── Packages.jsx         # 3D Flip cards
-│   ├── Marquee.jsx          # Angled scroll-scrubbed image rows
-│   ├── Reviews.jsx          # Circular rotating layout
-│   ├── Location.jsx         # SVG path drawing animation
-│   ├── BookingCTA.jsx       # Final conversion section
-│   └── Footer.jsx           
-├── App.jsx                  # Main layout wrapper & ReactLenis root
-├── index.css                # Global styles & Custom Color Palette
-└── main.jsx                 # React DOM entry
-🎨 Theming & Colors
+
+
+ Theming & Colors
 The UI relies heavily on a custom, calming nature-inspired palette defined in index.css:
 
 --forest: #2C4A3B (Deep typography & dark backgrounds)
